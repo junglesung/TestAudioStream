@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TestAudioStream</string>
+    <string name="local">Local: </string>
+    <string name="remote">Remote: </string>
+    <string name="play">Play</string>
+    <string name="stop">Stop</string>
+    <string name="refresh">Refresh</string>
+    <string name="please_give_the_right_port">Please give port 1~65534</string>
+    <string name="please_give_the_remote_device_ip">Please give the remote device IP</string>
+    <string name="test_audio">TestAudio</string>
+    <string name="voice_is_sending">Voice is sending</string>
+</resources>

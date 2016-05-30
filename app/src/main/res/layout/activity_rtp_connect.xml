@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.vernonsung.testaudiostream.RtpConnectActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/local"
+        android:id="@+id/textViewLocal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="111.111.111.111"
+        android:id="@+id/textViewLocalIp"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textViewLocal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:id="@+id/textViewLocalColon"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textViewLocalIp"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12345"
+        android:id="@+id/textViewLocalPort"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textViewLocalColon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/remote"
+        android:id="@+id/textViewRemote"
+        android:layout_alignBaseline="@+id/editTextRemoteIp"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="222.222.222.222"
+        android:id="@+id/editTextRemoteIp"
+        android:layout_below="@+id/textViewLocal"
+        android:layout_toEndOf="@+id/textViewRemote" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=":"
+        android:id="@+id/textViewRemoteColon"
+        android:layout_alignBaseline="@+id/editTextRemoteIp"
+        android:layout_toEndOf="@+id/editTextRemoteIp"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="5"
+        android:hint="12345"
+        android:id="@+id/editTextRemotePort"
+        android:layout_below="@+id/textViewLocalIp"
+        android:layout_toEndOf="@+id/textViewRemoteColon" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/play"
+        android:id="@+id/buttonPlay"
+        android:layout_below="@+id/editTextRemoteIp"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/stop"
+        android:id="@+id/buttonStop"
+        android:layout_below="@+id/editTextRemoteIp"
+        android:layout_toEndOf="@+id/buttonPlay" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/refresh"
+        android:id="@+id/buttonRefresh"
+        android:layout_below="@+id/editTextRemoteIp"
+        android:layout_toEndOf="@+id/buttonStop" />
+</RelativeLayout>
