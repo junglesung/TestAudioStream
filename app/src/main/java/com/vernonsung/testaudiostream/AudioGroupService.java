@@ -138,7 +138,7 @@ public class AudioGroupService extends Service implements AudioManager.OnAudioFo
                 break;
             case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT:
                 // Lost focus for a short time
-                // Do nothing
+                group.setMode(AudioGroup.MODE_ON_HOLD);
                 Log.d(LOG_TAG, "Audio focus change -> AUDIOFOCUS_LOSS_TRANSIENT");
                 break;
             case AudioManager.AUDIOFOCUS_LOSS_TRANSIENT_CAN_DUCK:
